@@ -7,7 +7,7 @@ public class Caculator {
         System.out.println(countWord(str1,3));
     }
     public static int countWord(String text,int a){
-        String[] newString=text.trim().split(" ");
+        String[] newString=text.trim().split("\\s+");
         int count=0;
         for (int i = 0; i < newString.length; i++) {
             if (newString[i].length()>=a){
